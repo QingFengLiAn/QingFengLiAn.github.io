@@ -81,7 +81,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/07/21/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/1595594699848.png">
 <meta property="og:image" content="http://yoursite.com/2020/07/21/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/1595595167708.png">
 <meta property="article:published_time" content="2020-07-21T05:03:36.000Z">
-<meta property="article:modified_time" content="2020-07-24T12:52:48.090Z">
+<meta property="article:modified_time" content="2020-07-27T13:30:00.252Z">
 <meta property="article:author" content="清 峰 H">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -452,7 +452,7 @@
 <hr>
 <h4 id="I-类属性-类（静态）"><a href="#I-类属性-类（静态）" class="headerlink" title="I  类属性 类（静态）"></a>I  类属性 类（静态）</h4><h5 id="1-类属性"><a href="#1-类属性" class="headerlink" title="1 类属性"></a>1 类属性</h5><p>类属性：又叫做静态属性</p>
 <p>对象属性：又叫做实例属性，非静态属性</p>
-<p>如果一个属性声明成类属性，那么所有的对象，都共享这么一个值<br>给英雄设置一个类属性叫做“版权” (copyright), 无论有多少个具体的英雄，所有的英雄的版权都属于 Riot Games公司。(不是我写的喔，网上抄的。感觉给LOL找到了归属感)</p>
+<p>如果一个属性声明成类属性，那么所有的对象，都共享这么一个值<br>给英雄设置一个类属性叫做“版权” (copyright), 无论有多少个具体的英雄，所有的英雄的版权都属于 Riot Games公司。(不是我写的喔，网上抄的。感觉给LOL玩家找到了归属感)</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> charactor;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hero</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    String name; <span class="comment">//姓名</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">float</span> hp; <span class="comment">//血量</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">float</span> armor; <span class="comment">//护甲</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">int</span> moveSpeed; <span class="comment">//移动速度</span></span><br><span class="line">     </span><br><span class="line">    <span class="keyword">static</span> String copyRight;<span class="comment">// 版权</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Hero</span><span class="params">()</span></span>&#123;</span><br><span class="line">         </span><br><span class="line">    &#125;</span><br><span class="line">     </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Hero</span><span class="params">(String name,<span class="keyword">float</span> hp)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.hp = hp;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//复活</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">revive</span><span class="params">(Hero h)</span></span>&#123;</span><br><span class="line">        h = <span class="keyword">new</span> Hero(<span class="string">"提莫"</span>,<span class="number">383</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    	Hero zoe = <span class="keyword">new</span> Hero();</span><br><span class="line">    	Hero.copyRight = <span class="string">"版权由Riot Games公司所有"</span>;</span><br><span class="line">        System.out.println(zoe.copyRight);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">      </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2020/07/21/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/1595423057475.png" alt="1595423057475"></p>
@@ -705,6 +705,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/07/25/%E6%8E%A5%E5%8F%A3%E4%B8%8E%E7%BB%A7%E6%89%BF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          接口与继承
+        
+      </div>
+    </a>
   
   
     <a href="/2020/07/20/Arrays/" id="article-nav-older" class="article-nav-link-wrap">
