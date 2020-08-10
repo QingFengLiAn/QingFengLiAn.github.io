@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | 清峰的博客</title>
+  <title>异常处理 | 清峰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -24,15 +24,30 @@
     }
   </style>
 
-  <meta name="description" content="江西科技2020.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="清峰的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="A 什么是异常异常定义：导致程序的正常流程被中断的事件，叫做异常 1 文件不存在异常比如要打开d盘的LOL.exe文件，这个文件是有可能不存在的Java中通过 new FileInputStream(f) 试图打开某文件，就有可能抛出文件不存在异常FileNotFoundException如果不处理该异常，就会有编译错误">
+<meta property="og:type" content="article">
+<meta property="og:title" content="异常处理">
+<meta property="og:url" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/index.html">
 <meta property="og:site_name" content="清峰的博客">
-<meta property="og:description" content="江西科技2020.">
+<meta property="og:description" content="A 什么是异常异常定义：导致程序的正常流程被中断的事件，叫做异常 1 文件不存在异常比如要打开d盘的LOL.exe文件，这个文件是有可能不存在的Java中通过 new FileInputStream(f) 试图打开某文件，就有可能抛出文件不存在异常FileNotFoundException如果不处理该异常，就会有编译错误">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596704861629.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596705315915.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596706155227.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596706898209.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596782781345.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596784114176.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596784286380.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596784917790.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596962461688.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1597063161285.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1597064553079.png">
+<meta property="article:published_time" content="2020-08-06T08:26:38.000Z">
+<meta property="article:modified_time" content="2020-08-10T13:02:34.813Z">
 <meta property="article:author" content="清 峰 H">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596704861629.png">
   
     <link rel="alternative" href="/atom.xml" title="清峰的博客" type="application/atom+xml">
   
@@ -176,36 +191,165 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-异常处理" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      异常处理
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" class="archive-article-date">
+
+        
+        <a href="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" class="archive-article-date">
   	<time datetime="2020-08-06T08:26:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-06</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="A-什么是异常"><a href="#A-什么是异常" class="headerlink" title="A 什么是异常"></a>A 什么是异常</h4><p>异常定义：<br>导致程序的正常流程被中断的事件，叫做异常</p>
+<h5 id="1-文件不存在异常"><a href="#1-文件不存在异常" class="headerlink" title="1 文件不存在异常"></a>1 文件不存在异常</h5><p>比如要打开d盘的LOL.exe文件，这个文件是有可能不存在的<br>Java中通过 new FileInputStream(f) 试图打开某文件，就有可能抛出<strong>文件不存在异常FileNotFoundException</strong><br>如果不处理该异常，就会有编译错误</p>
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596704861629.png" alt="1596704861629"></p>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<h4 id="B-处理"><a href="#B-处理" class="headerlink" title="B 处理"></a>B 处理</h4><p>异常处理常见手段： try catch finally throws</p>
+<h5 id="1-try-catch"><a href="#1-try-catch" class="headerlink" title="1 try catch"></a>1 try catch</h5><p>1 将可能抛出FileNotFoundException <strong>文件不存在异常</strong>的代码放在try里</p>
+<p>2 如果文件存在，就会顺序往下执行，并且不执行catch块中的代码</p>
+<p>3 如果文件不存在，try 里的代码会立即终止，程序流程会运行到对应的catch块中</p>
+<p>4 e.printStackTrace(); 会打印出方法的调用痕迹，如此例，会打印出异常开始于TestException的第16行，这样就便于定位和分析到底哪里出了异常</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestException</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		File file = <span class="keyword">new</span> File(<span class="string">"d:/LOL.exe"</span>);</span><br><span class="line">		<span class="comment">// 试图打开文件LOL.exe，会抛出FileNotFoundException，如果不处理该异常，就会有编译错误</span></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"试图打开 d:/LOL.exe"</span>);</span><br><span class="line">            <span class="keyword">new</span> FileInputStream(file);</span><br><span class="line">            System.out.println(<span class="string">"成功打开"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">			 System.out.println(<span class="string">"d:/LOL.exe不存在"</span>);</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596705315915.png" alt="1596705315915"></p>
+<h5 id="2-使用异常的父类进行catch"><a href="#2-使用异常的父类进行catch" class="headerlink" title="2 使用异常的父类进行catch"></a>2 使用异常的父类进行catch</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">          System.out.println(<span class="string">"试图打开 d:/LOL.exe"</span>);</span><br><span class="line">          <span class="keyword">new</span> FileInputStream(file);</span><br><span class="line">          System.out.println(<span class="string">"成功打开"</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">	 System.out.println(<span class="string">"d:/LOL.exe不存在"</span>);</span><br><span class="line">	e.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-多异常捕捉办法1"><a href="#3-多异常捕捉办法1" class="headerlink" title="3 多异常捕捉办法1"></a>3 多异常捕捉办法1</h5><p>有的时候一段代码会抛出多种异常，比如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> FileInputStream(f);</span><br><span class="line">Date d = sdf.parse(<span class="string">"2016-06-03"</span>);</span><br></pre></td></tr></table></figure>
+
+<p>这段代码，会抛出 文件不存在异常 FileNotFoundException  和 解析异常ParseException<br>解决办法之一是分别进行catch</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.text.ParseException;</span><br><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestException</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		File f = <span class="keyword">new</span> File(<span class="string">"d:/LOL.exe"</span>);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">"试图打开 d:/LOL.exe"</span>);</span><br><span class="line">			<span class="keyword">new</span> FileInputStream(f);</span><br><span class="line">			System.out.println(<span class="string">"成功打开"</span>);</span><br><span class="line">			SimpleDateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd"</span>);</span><br><span class="line">			Date d = sdf.parse(<span class="string">"2016-06-03"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"d:/LOL.exe不存在"</span>);</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125; <span class="keyword">catch</span> (ParseException e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"日期格式解析错误"</span>);</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-多异常捕捉办法2"><a href="#4-多异常捕捉办法2" class="headerlink" title="4 多异常捕捉办法2"></a>4 多异常捕捉办法2</h5><p>另一个种办法是把多个异常，放在一个catch里统一捕捉 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">catch</span> (FileNotFoundException | ParseException e) &#123;</span><br></pre></td></tr></table></figure>
+
+<p>这种方式从 JDK7开始支持，好处是捕捉的代码<strong>更紧凑</strong>，不足之处是，一旦发生异常，<strong>不能确定到底是哪种异常</strong>，需要通过instanceof 进行判断具体的异常类型</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (e <span class="keyword">instanceof</span> FileNotFoundException)</span><br><span class="line">	System.out.println(<span class="string">"d:/LOL.exe不存在"</span>);</span><br><span class="line"><span class="keyword">if</span> (e <span class="keyword">instanceof</span> ParseException)</span><br><span class="line">	System.out.println(<span class="string">"日期格式解析错误"</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.text.ParseException;</span><br><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestException</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		File file = <span class="keyword">new</span> File(<span class="string">"D:/LOL.exe"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">"试图打开 D:/LOL.exe"</span>);</span><br><span class="line">			<span class="keyword">new</span> FileInputStream(file);</span><br><span class="line">			System.out.println(<span class="string">"成功打开"</span>);</span><br><span class="line">			SimpleDateFormat dateFormat = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd"</span>);</span><br><span class="line">			<span class="comment">// parse解析</span></span><br><span class="line">			Date date = dateFormat.parse(<span class="string">"2020-8-6"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException | ParseException e) &#123;</span><br><span class="line">            <span class="keyword">if</span> (e <span class="keyword">instanceof</span> FileNotFoundException)</span><br><span class="line">                System.out.println(<span class="string">"d:/LOL.exe不存在"</span>);</span><br><span class="line">            <span class="keyword">if</span> (e <span class="keyword">instanceof</span> ParseException)</span><br><span class="line">                System.out.println(<span class="string">"日期格式解析错误"</span>);</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-finally"><a href="#5-finally" class="headerlink" title="5 finally"></a>5 finally</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">finally</span>&#123;</span><br><span class="line">            System.out.println(<span class="string">"无论文件是否存在， 都会执行的代码"</span>);</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596706155227.png" alt="1596706155227"></p>
+<h5 id="6-throws-抛出"><a href="#6-throws-抛出" class="headerlink" title="6 throws 抛出"></a>6 throws 抛出</h5><p>考虑如下情况：<br>主方法调用method1<br>method1调用method2<br>method2中打开文件</p>
+<p>method2中需要进行异常处理<br>但是method2<strong>不打算处理</strong>，而是把这个异常通过<strong>throws抛出去</strong><br>那么method1就会<strong>接到该异常</strong>。 处理办法也是两种，要么是try catch处理掉，要么也是<strong>抛出去</strong>。<br>method1选择本地try catch住 一旦try catch住了，就相当于把这个异常消化掉了，主方法在调用method1的时候，就不需要进行异常处理了</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestException</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="comment">//		考虑如下情况：</span></span><br><span class="line"><span class="comment">//		主方法调用method1</span></span><br><span class="line"><span class="comment">//		method1调用method2</span></span><br><span class="line"><span class="comment">//		method2中打开文件</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//		method2中需要进行异常处理</span></span><br><span class="line"><span class="comment">//		但是method2不打算处理，而是把这个异常通过throws抛出去</span></span><br><span class="line"><span class="comment">//		那么method1就会接到该异常。 处理办法也是两种，要么是try catch处理掉，要么也是抛出去。</span></span><br><span class="line"><span class="comment">//		method1选择本地try catch住 一旦try catch住了，就相当于把这个异常消化掉了，主方法在调用method1的时候，就不需要进行异常处理了</span></span><br><span class="line">		method1();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">method1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			method2();</span><br><span class="line">			<span class="comment">// 捕捉异常</span></span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 抛出异常</span></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">method2</span><span class="params">()</span> <span class="keyword">throws</span> FileNotFoundException </span>&#123;</span><br><span class="line">		</span><br><span class="line">		File f = <span class="keyword">new</span> File(<span class="string">"d:/LOL.exe"</span>);</span><br><span class="line">		System.out.println(<span class="string">"试图打开 D:/LOL.exe"</span>);</span><br><span class="line">		<span class="keyword">new</span> FileInputStream(f);</span><br><span class="line">		System.out.println(<span class="string">"成功打开"</span>);</span><br><span class="line">		 </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-throw和throws的区别"><a href="#7-throw和throws的区别" class="headerlink" title="7 throw和throws的区别"></a>7 throw和throws的区别</h5><p>throws与throw这两个关键字接近，不过意义不一样，有如下区别：</p>
+<ol>
+<li>throws 出现在方法声明上，而throw通常都出现在方法体内。</li>
+<li>throws 表示出现异常的一种可能性，并不一定会发生这些异常；throw则是抛出了异常，执行throw则一定抛出了某个异常对象</li>
+</ol>
+<hr>
+<h5 id="小练习"><a href="#小练习" class="headerlink" title="小练习"></a>小练习</h5><p>假设有一个方法 public int method()， 会返回一个整数<br>在这个方法中有try catch 和 finally.<br>try 里返回 1<br>catch 里 返回 2<br>finally 里 返回3<br>那么，这个方法到底返回多少？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestException</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="comment">//		假设有一个方法 public int method()， 会返回一个整数</span></span><br><span class="line"><span class="comment">//		在这个方法中有try catch 和 finally.</span></span><br><span class="line"><span class="comment">//		try 里返回 1</span></span><br><span class="line"><span class="comment">//		catch 里 返回 2</span></span><br><span class="line"><span class="comment">//		finally 里 返回3</span></span><br><span class="line"><span class="comment">//		那么，这个方法到底返回多少？</span></span><br><span class="line">		System.out.println(method());</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">method</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">3</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596706898209.png" alt="1596706898209"></p>
+<h4 id="C-异常分类"><a href="#C-异常分类" class="headerlink" title="C 异常分类"></a>C 异常分类</h4><h5 id="1可查异常"><a href="#1可查异常" class="headerlink" title="1可查异常"></a>1可查异常</h5><p>可查异常： CheckedException<br>可查异常即<strong>必须进行处理的异常</strong>，要么try catch住,要么往外抛，谁调用，谁处理，比如 FileNotFoundException<br>如果不处理，编译器，就不让你通过</p>
+<h5 id="2-运行时异常"><a href="#2-运行时异常" class="headerlink" title="2 运行时异常"></a>2 运行时异常</h5><p>运行时异常RuntimeException指： <strong>不是必须进行try catch的异常</strong><br><strong>常见运行时异常:</strong><br>除数不能为0异常:ArithmeticException<br>下标越界异常:ArrayIndexOutOfBoundsException<br>空指针异常:NullPointerException<br>在编写代码的时候，依然可以使用try catch throws进行处理，与可查异常不同之处在于，<strong>即便不进行try catch，也不会有编译错误</strong><br>Java之所以会设计运行时异常的原因之一，是因为下标越界，空指针这些运行时异常<strong>太过于普遍</strong>，如果都需要进行捕捉，代码的可读性就会变得很糟糕。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestException</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 任何除数不能为0:ArithmeticException  Arithmetic--算术</span></span><br><span class="line">		<span class="keyword">int</span> k = <span class="number">5</span>/<span class="number">0</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 下标越界异常：ArrayIndexOutOfBoundsException</span></span><br><span class="line">		<span class="keyword">int</span> j[] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line">		j[<span class="number">10</span>] = <span class="number">10</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 空指针异常: NullPointerException</span></span><br><span class="line">		String str = <span class="keyword">null</span>;</span><br><span class="line">		str.length();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-错误"><a href="#3-错误" class="headerlink" title="3 错误"></a>3 错误</h5><p>错误Error，指的是<strong>系统级别的异常</strong>，通常是内存用光了<br>在<strong>默认设置下</strong>，一般java程序启动的时候，最大可以使用16m的内存<br>如例不停的给StringBuffer追加字符，很快就把内存使用光了。抛出<strong>OutOfMemoryError</strong><br>与运行时异常一样，错误也是不要求强制捕捉的</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestException</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		StringBuffer buffer = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; Integer.MAX_VALUE; i++) &#123;</span><br><span class="line">			buffer.append(<span class="string">'a'</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596782781345.png" alt="1596782781345"></p>
+<h5 id="小练习-1"><a href="#小练习-1" class="headerlink" title="小练习"></a>小练习</h5><p>运行时异常 RuntimeException，能否被捕捉？</p>
+<p>错误Error，能否被捕捉？</p>
+<p><strong>面试题常问题：</strong> 运行时异常与非运行时异常的区别 </p>
+<p>运行时异常是不可查异常，不需要进行显示捕捉</p>
+<p>非运行时异常是可查异常，必须进行显式的捕捉，或者抛出<br>注：运行时异常是运行的时候抛出的异常，非运行时异常，不运行也能抛出</p>
+<p>错误Error没必要捕捉，因为Error错误会造成程序无法直接运行，所以捕捉就没有意义。 至于log日志看不见，在开发环境就已经解决了根本不会发布到正式环境</p>
+<h4 id="D-Throwable"><a href="#D-Throwable" class="headerlink" title="D Throwable"></a>D Throwable</h4><h5 id="1-Throwable"><a href="#1-Throwable" class="headerlink" title="1 Throwable"></a>1 Throwable</h5><p>Throwable是类，Exception和Error都继承了该类<br>所以在捕捉的时候，也可以使用Throwable进行捕捉<br>如图： 异常分<strong>Error</strong>和<strong>Exception</strong><br>Exception里又分<strong>运行时异常</strong>和<strong>可查异常</strong>。</p>
+<h5 id="小练习-2"><a href="#小练习-2" class="headerlink" title="小练习"></a>小练习</h5><p>在方法声明上，可以抛出指定的异常，比如FileNotFoundException<br>那么能否抛出Throwable这个类？ </p>
+<p>这个方法的调用者又该如何处理</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestException</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            throwCheck(<span class="number">2</span>);</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Throwable e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        throwRun(<span class="number">1</span>);</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">throwCheck</span><span class="params">(<span class="keyword">int</span> a)</span> <span class="keyword">throws</span> Throwable</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Throwable(<span class="string">"a"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">throwRun</span><span class="params">(<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(a &gt; -<span class="number">1</span>)&#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"a &gt; -1"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596784114176.png" alt="1596784114176"></p>
+<h4 id="E-自定义异常"><a href="#E-自定义异常" class="headerlink" title="E 自定义异常"></a>E 自定义异常</h4><h5 id="1-创建自定义异常"><a href="#1-创建自定义异常" class="headerlink" title="1 创建自定义异常"></a>1 创建自定义异常</h5><p>一个英雄攻击另一个英雄的时候，如果发现另一个英雄已经挂了，就会抛出EnemyHeroIsDeadException<br>创建一个类EnemyHeroIsDeadException，并继承Exception<br>提供两个构造方法</p>
+<ol>
+<li>无参的构造方法</li>
+<li>带参的构造方法，并调用父类的对应的构造方法</li>
+</ol>
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596784286380.png" alt="1596784286380"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">EnemyHeroIsDeadException</span> <span class="keyword">extends</span> <span class="title">Exception</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">EnemyHeroIsDeadException</span><span class="params">()</span></span>&#123;</span><br><span class="line">        </span><br><span class="line">   &#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">EnemyHeroIsDeadException</span><span class="params">(String msg)</span></span>&#123;</span><br><span class="line">       <span class="keyword">super</span>(msg);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-抛出自定义异常"><a href="#2-抛出自定义异常" class="headerlink" title="2 抛出自定义异常"></a>2 抛出自定义异常</h5><p>在Hero的attack方法中，当发现敌方英雄的血量为0的时候，抛出该异常<br>\1. 创建一个EnemyHeroIsDeadException实例<br>\2. 通过<strong>throw</strong> 抛出该异常<br>\3. 当前方法通过 <strong>throws</strong> 抛出该异常</p>
+<p>在外部调用attack方法的时候，就需要进行捕捉，并且捕捉的时候，可以通过e.getMessage() 获取当时出错的具体原因 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> charactor;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hero</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> String name; </span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">float</span> hp;</span><br><span class="line"><span class="comment">//    在Hero的attack方法中，当发现敌方英雄的血量为0的时候，抛出该异常</span></span><br><span class="line"><span class="comment">//    \1. 创建一个EnemyHeroIsDeadException实例</span></span><br><span class="line"><span class="comment">//    \2. 通过**throw** 抛出该异常</span></span><br><span class="line"><span class="comment">//    \3. 当前方法通过 **throws** 抛出该异常</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//    在外部调用attack方法的时候，就需要进行捕捉，并且捕捉的时候，可以通过e.getMessage() 获取当时出错的具体原因 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">attack</span><span class="params">(Hero h)</span> <span class="keyword">throws</span> EnemyHeroIsDeadException </span>&#123;</span><br><span class="line">    	<span class="keyword">if</span>(<span class="number">0</span> == hp) &#123;</span><br><span class="line">    		<span class="keyword">throw</span> <span class="keyword">new</span> EnemyHeroIsDeadException(h.name+<span class="string">" 已经挂了,无法攻击"</span>);</span><br><span class="line">    	&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">EnemyHeroIsDeadException</span> <span class="keyword">extends</span> <span class="title">Exception</span></span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="title">EnemyHeroIsDeadException</span><span class="params">()</span> </span>&#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="title">EnemyHeroIsDeadException</span><span class="params">(String message)</span> </span>&#123;</span><br><span class="line">			<span class="keyword">super</span>(message);</span><br><span class="line">		&#125;</span><br><span class="line">    	</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Hero teemo = <span class="keyword">new</span> Hero();</span><br><span class="line">		teemo.name = <span class="string">"提莫"</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			teemo.attack(teemo);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (EnemyHeroIsDeadException e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"异常的具体原因"</span>+e.getMessage());</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">         </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596784917790.png" alt="1596784917790"></p>
+<h5 id="小练习-3"><a href="#小练习-3" class="headerlink" title="小练习"></a>小练习</h5><p>对[MyStringBuffer]的插入和删除方法中的边界条件判断，用抛出异常来解决<br>例: insert(int pos, String b) , 当pos 是负数的时候，抛出<strong>自定义异常</strong><br>需要实现自定义两种异常<br>IndexIsNagetiveException 下标为负异常<br>IndexIsOutofRangeException 下标超出范围异常<br>以下是需要调用这些异常的场景：</p>
+<p>pos&lt;0<br>抛出 IndexIsNagetiveException</p>
+<p>pos&gt;length<br>抛出 IndexIsOutofRangeException</p>
+<p>null==b<br>抛出 NullPointerException</p>
+<p>start&lt;0<br>抛出 IndexIsNagetiveException</p>
+<p>start&gt;length<br>抛出 IndexIsOutofRangeException</p>
+<p>end&lt;0<br> 抛出 IndexIsNagetiveException</p>
+<p>end&gt;length<br>抛出 IndexIsOutofRangeException</p>
+<p>start&gt;=end<br>抛出 IndexIsOutofRangeException</p>
+<p>注意： 接口IStringBuffer中声明的方法需要抛出异常</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyStringBuffer</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> capacity = <span class="number">16</span>;</span><br><span class="line">    <span class="keyword">int</span> length = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">char</span>[] value;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyStringBuffer</span><span class="params">()</span></span>&#123;</span><br><span class="line">        value = <span class="keyword">new</span> <span class="keyword">char</span>[capacity];</span><br><span class="line">    &#125;</span><br><span class="line">      </span><br><span class="line">    <span class="comment">//有参构造方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyStringBuffer</span><span class="params">(String str)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>();</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">null</span>==str)</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">          </span><br><span class="line">        <span class="keyword">if</span>(capacity&lt;str.length())&#123;</span><br><span class="line">            capacity  = value.length*<span class="number">2</span>;</span><br><span class="line">            value=<span class="keyword">new</span> <span class="keyword">char</span>[capacity];</span><br><span class="line">        &#125;</span><br><span class="line">          </span><br><span class="line">        <span class="keyword">if</span>(capacity&gt;=str.length())</span><br><span class="line">            System.arraycopy(str.toCharArray(), <span class="number">0</span>, value, <span class="number">0</span>, str.length());</span><br><span class="line">          </span><br><span class="line">        length = str.length();</span><br><span class="line">          </span><br><span class="line">    &#125;</span><br><span class="line">       </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> pos, <span class="keyword">char</span> b)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        insert(pos,String.valueOf(b));</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">delete</span><span class="params">(<span class="keyword">int</span> start)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">          </span><br><span class="line">        delete(start,length);</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">        <span class="keyword">return</span> length;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">      </span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</span><br><span class="line">          </span><br><span class="line">        <span class="keyword">char</span>[] realValue = <span class="keyword">new</span> <span class="keyword">char</span>[length];</span><br><span class="line">  </span><br><span class="line">        System.arraycopy(value, <span class="number">0</span>, realValue, <span class="number">0</span>, length);</span><br><span class="line">          </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> String(realValue);</span><br><span class="line">          </span><br><span class="line">    &#125;   </span><br><span class="line">     </span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">IndexIsNagetiveException</span> <span class="keyword">extends</span> <span class="title">Exception</span> </span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">IndexIsNagetiveException</span><span class="params">()</span> </span>&#123;</span><br><span class="line">             </span><br><span class="line">        &#125;</span><br><span class="line">         </span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">IndexIsNagetiveException</span><span class="params">(String msg)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">super</span> (msg);</span><br><span class="line">        &#125;</span><br><span class="line">         </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//通过构造方法自定义异常</span></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">IndexIsOutofRangeException</span> <span class="keyword">extends</span> <span class="title">Exception</span></span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">IndexIsOutofRangeException</span><span class="params">()</span> </span>&#123;           </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">IndexIsOutofRangeException</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">super</span> (s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">     </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">delete</span><span class="params">(<span class="keyword">int</span> start, <span class="keyword">int</span> end)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        <span class="comment">//边界条件判断</span></span><br><span class="line">        <span class="keyword">if</span>(start&lt;<span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IndexIsNagetiveException(<span class="string">"下标为负异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">          </span><br><span class="line">        <span class="keyword">if</span>(start&gt;length) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IndexIsOutofRangeException(<span class="string">"下标超出范围异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">          </span><br><span class="line">        <span class="keyword">if</span>(end&lt;<span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IndexIsNagetiveException(<span class="string">"下标为负异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">          </span><br><span class="line">        <span class="keyword">if</span>(end&gt;length) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IndexIsOutofRangeException(<span class="string">"下标超出范围异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">          </span><br><span class="line">        <span class="keyword">if</span>(start&gt;=end) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IndexIsOutofRangeException(<span class="string">"下标超出范围异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">          </span><br><span class="line">        System.arraycopy(value, end, value, start, length- end);</span><br><span class="line">        length-=end-start;</span><br><span class="line">          </span><br><span class="line">    &#125;</span><br><span class="line">     </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> pos, String b)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">           </span><br><span class="line">        <span class="comment">//边界条件判断</span></span><br><span class="line">        <span class="keyword">if</span>(pos&lt;<span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IndexIsNagetiveException(<span class="string">"下标为负异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">           </span><br><span class="line">        <span class="keyword">if</span>(pos&gt;length) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IndexIsOutofRangeException(<span class="string">"下标超出范围异常"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">           </span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">null</span>==b) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> NullPointerException(<span class="string">"为空"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">           </span><br><span class="line">        <span class="comment">//扩容</span></span><br><span class="line">        <span class="keyword">while</span>(length+b.length()&gt;capacity)&#123;</span><br><span class="line">            capacity = (<span class="keyword">int</span>) ((length+b.length())*<span class="number">1.5f</span>);</span><br><span class="line">            <span class="keyword">char</span>[] newValue = <span class="keyword">new</span> <span class="keyword">char</span>[capacity];</span><br><span class="line">            System.arraycopy(value, <span class="number">0</span>, newValue, <span class="number">0</span>, length);</span><br><span class="line">            value = newValue;</span><br><span class="line">        &#125;</span><br><span class="line">           </span><br><span class="line">        <span class="keyword">char</span>[] cs = b.toCharArray();</span><br><span class="line">           </span><br><span class="line">        <span class="comment">//先把已经存在的数据往后移</span></span><br><span class="line">        System.arraycopy(value, pos, value,pos+ cs.length, length-pos);</span><br><span class="line">        <span class="comment">//把要插入的数据插入到指定位置</span></span><br><span class="line">        System.arraycopy(cs, <span class="number">0</span>, value, pos, cs.length);</span><br><span class="line">           </span><br><span class="line">        length = length+cs.length;</span><br><span class="line">           </span><br><span class="line">    &#125;</span><br><span class="line">     </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        MyStringBuffer sb = <span class="keyword">new</span> MyStringBuffer(<span class="string">"there ligtht"</span>);</span><br><span class="line">        System.out.println(sb);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            sb.insert(-<span class="number">4</span>, <span class="string">"let "</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"异常的具体原因："</span>+e.getMessage());</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sb);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            sb.delete(<span class="number">0</span>,<span class="number">44</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"异常的具体原因："</span>+e.getMessage());</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sb);</span><br><span class="line">         </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="G-综合练习"><a href="#G-综合练习" class="headerlink" title="G 综合练习"></a>G 综合练习</h4><h5 id="1-练习-异常综合1"><a href="#1-练习-异常综合1" class="headerlink" title="1 练习-异常综合1"></a>1 练习-异常综合1</h5><p>这是一个类图<br>Account类： 银行账号<br>  属性： balance 余额<br>  方法： getBalance() 获取余额<br>  方法： deposit() 存钱<br>  方法： withdraw() 取钱<br>OverdraftException： 透支异常，继承Exception<br>  属性： deficit 透支额</p>
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1596962461688.png" alt="1596962461688"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BankTest</span> </span>&#123;</span><br><span class="line"><span class="comment">//	Account类： 银行账号</span></span><br><span class="line"><span class="comment">//	属性： balance 余额</span></span><br><span class="line"><span class="comment">//	方法： getBalance() 获取余额</span></span><br><span class="line"><span class="comment">//	方法： deposit() 存钱</span></span><br><span class="line"><span class="comment">//	方法： withdraw() 取钱</span></span><br><span class="line"><span class="comment">//	OverdraftException： 透支异常，继承Exception</span></span><br><span class="line"><span class="comment">//	属性： deficit 透支额 </span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 获取一个初始余额为10000的账户 </span></span><br><span class="line">		Account A = <span class="keyword">new</span> Account(<span class="number">10000</span>);</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="comment">// 存-10元抛出异常</span></span><br><span class="line"><span class="comment">//			A.deposit(-10);</span></span><br><span class="line">	        <span class="comment">// 取现金额</span></span><br><span class="line">            <span class="keyword">int</span> w1 = <span class="number">21000</span>;</span><br><span class="line">            <span class="comment">//抛出异常后，第二句就不执行了</span></span><br><span class="line">            System.out.println(<span class="string">"该银行账户成功取现"</span> + A.withdraw(w1) + <span class="string">"元"</span>);</span><br><span class="line">            System.out.println(<span class="string">"余额为"</span> + A.getBalance() + <span class="string">"元"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (OverdraftException e) &#123;</span><br><span class="line">			System.out.println(e.getMessage());</span><br><span class="line">            <span class="keyword">if</span> (e.getDeficit() &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                System.out.println(<span class="string">"超出余额"</span> + e.getDeficit() + <span class="string">"元"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 银行账号</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Account</span></span>&#123;</span><br><span class="line">	<span class="keyword">protected</span> <span class="keyword">double</span> balance; <span class="comment">// 余额</span></span><br><span class="line">	<span class="comment">// 构造方法 账户初始余额</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Account</span><span class="params">(<span class="keyword">double</span> balance)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.balance = balance;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 方法： getBalance() 获取余额</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getBalance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> balance;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 方法： deposit() 存钱	</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deposit</span><span class="params">(<span class="keyword">double</span> money)</span> <span class="keyword">throws</span> OverdraftException</span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (money &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">			balance += money;</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> OverdraftException(<span class="string">"存款无法为负数！"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 方法： withdraw() 取钱</span></span><br><span class="line">	 <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">withdraw</span><span class="params">(<span class="keyword">double</span> money)</span> <span class="keyword">throws</span> OverdraftException </span>&#123;</span><br><span class="line">		 <span class="keyword">if</span>(money &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">			 <span class="keyword">double</span> temp = balance - money;</span><br><span class="line">			 <span class="keyword">if</span> ( temp &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">				 balance = temp;</span><br><span class="line">				 <span class="keyword">return</span> money;</span><br><span class="line">			&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> OverdraftException(<span class="string">"余额不足"</span>, -temp);</span><br><span class="line">            &#125;    </span><br><span class="line">		 &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			 <span class="keyword">throw</span> <span class="keyword">new</span> OverdraftException(<span class="string">"取现金额不能为负数！"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	 &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverdraftException</span> <span class="keyword">extends</span> <span class="title">Exception</span></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">double</span> deficit; <span class="comment">// 透支额</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">OverdraftException</span> <span class="params">(String message)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">// 透支异常</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">OverdraftException</span> <span class="params">(String message, <span class="keyword">double</span> deficit)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message);</span><br><span class="line">        <span class="keyword">this</span>.deficit = deficit;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 返回透支值</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getDeficit</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> deficit;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-练习-异常综合2"><a href="#2-练习-异常综合2" class="headerlink" title="2 练习-异常综合2"></a>2 练习-异常综合2</h5><p>类： CheckingAccount 支票账户，具备透支额度，继承Account<br>  属性：overdraftProtection 透支额度</p>
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1597063161285.png" alt="1597063161285"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> exception;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BankTest</span> </span>&#123;</span><br><span class="line"><span class="comment">//	Account类： 银行账号</span></span><br><span class="line"><span class="comment">//	属性： balance 余额</span></span><br><span class="line"><span class="comment">//	方法： getBalance() 获取余额</span></span><br><span class="line"><span class="comment">//	方法： deposit() 存钱</span></span><br><span class="line"><span class="comment">//	方法： withdraw() 取钱</span></span><br><span class="line"><span class="comment">//	OverdraftException： 透支异常，继承Exception</span></span><br><span class="line"><span class="comment">//	属性： deficit 透支额 </span></span><br><span class="line"><span class="comment">//	类： CheckingAccount 支票账户，具备透支额度，继承Account</span></span><br><span class="line"><span class="comment">//	属性：overdraftProtection 透支额度 </span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 获取一个初始余额为10000的账户 </span></span><br><span class="line">		Account A = <span class="keyword">new</span> Account(<span class="number">10000</span>);</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="comment">// 存-10元抛出异常</span></span><br><span class="line"><span class="comment">//			A.deposit(-10);</span></span><br><span class="line">	        <span class="comment">// 取现金额</span></span><br><span class="line">            <span class="keyword">int</span> w1 = <span class="number">21000</span>;</span><br><span class="line">            <span class="comment">//抛出异常后，第二句就不执行了</span></span><br><span class="line">            System.out.println(<span class="string">"该银行账户成功取现"</span> + A.withdraw(w1) + <span class="string">"元"</span>);</span><br><span class="line">            System.out.println(<span class="string">"余额为"</span> + A.getBalance() + <span class="string">"元"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (OverdraftException e) &#123;</span><br><span class="line">			System.out.println(e.getMessage());</span><br><span class="line">            <span class="keyword">if</span> (e.getDeficit() &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                System.out.println(<span class="string">"超出余额"</span> + e.getDeficit() + <span class="string">"元"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	     System.out.println(<span class="string">"\n\n"</span>);</span><br><span class="line">	     </span><br><span class="line">	     <span class="comment">// 支票账户</span></span><br><span class="line">	     <span class="comment">// 10000余额 20000额度</span></span><br><span class="line">	     CheckingAccount CA = <span class="keyword">new</span> CheckingAccount(<span class="number">10000</span>,<span class="number">20000</span>);</span><br><span class="line">	     <span class="keyword">try</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">"该支票账户成功取现"</span> + CA.withdraw(<span class="number">21000</span>) + <span class="string">"元"</span>);</span><br><span class="line">            System.out.println(<span class="string">"余额为"</span> + CA.getBalance() + <span class="string">"元"</span>);</span><br><span class="line">            System.out.println(<span class="string">"总额度"</span> + CA.getOverdraftProtection() + <span class="string">"元"</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (OverdraftException e) &#123;</span><br><span class="line">			System.out.println(e.getMessage());</span><br><span class="line">            <span class="keyword">if</span> (e.getDeficit() &gt; <span class="number">0</span>) &#123;</span><br><span class="line">                System.out.println(<span class="string">"超出余额"</span> + e.getDeficit() + <span class="string">"元"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 银行账号</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Account</span></span>&#123;</span><br><span class="line">	<span class="keyword">protected</span> <span class="keyword">double</span> balance; <span class="comment">// 余额</span></span><br><span class="line">	<span class="comment">// 构造方法 账户初始余额</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Account</span><span class="params">(<span class="keyword">double</span> balance)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.balance = balance;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 方法： getBalance() 获取余额</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getBalance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> balance;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">// 方法： deposit() 存钱	</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deposit</span><span class="params">(<span class="keyword">double</span> money)</span> <span class="keyword">throws</span> OverdraftException</span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (money &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">			balance += money;</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> OverdraftException(<span class="string">"存款无法为负数！"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 方法： withdraw() 取钱</span></span><br><span class="line">	 <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">withdraw</span><span class="params">(<span class="keyword">double</span> money)</span> <span class="keyword">throws</span> OverdraftException </span>&#123;</span><br><span class="line">		 <span class="keyword">if</span>(money &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">			 <span class="keyword">double</span> temp = balance - money;</span><br><span class="line">			 <span class="keyword">if</span> ( temp &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">				 balance = temp;</span><br><span class="line">				 <span class="keyword">return</span> money;</span><br><span class="line">			&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> OverdraftException(<span class="string">"余额不足"</span>, -temp);</span><br><span class="line">            &#125;    </span><br><span class="line">		 &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			 <span class="keyword">throw</span> <span class="keyword">new</span> OverdraftException(<span class="string">"取现金额不能为负数！"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	 &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 类： CheckingAccount 支票账户，具备透支额度，继承Account</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CheckingAccount</span> <span class="keyword">extends</span> <span class="title">Account</span></span>&#123;</span><br><span class="line">	 <span class="keyword">private</span> <span class="keyword">double</span> overdraftProtection; <span class="comment">// 透支额度 </span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">CheckingAccount</span><span class="params">(<span class="keyword">double</span> balance)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>(balance);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getOverdraftProtection</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> overdraftProtection;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">CheckingAccount</span><span class="params">(<span class="keyword">double</span> balance,<span class="keyword">double</span> overdraftProtection)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>(balance);</span><br><span class="line">		<span class="keyword">this</span>.overdraftProtection = overdraftProtection;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 重写支票账户的取现方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">withdraw</span><span class="params">(<span class="keyword">double</span> money)</span> <span class="keyword">throws</span> OverdraftException</span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(money &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">double</span> temp = balance - money;</span><br><span class="line">			<span class="keyword">if</span>(temp &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">                balance = temp;</span><br><span class="line">                <span class="keyword">return</span> money;</span><br><span class="line">			&#125;<span class="keyword">else</span> <span class="keyword">if</span>(temp &gt; -overdraftProtection &amp;&amp; temp&lt;<span class="number">0</span>) &#123;</span><br><span class="line">				balance = temp;</span><br><span class="line">				System.out.println(<span class="string">"账户已透支"</span> + -temp + <span class="string">"元，透支额度剩余"</span> + (overdraftProtection + temp) + <span class="string">"元"</span>);</span><br><span class="line">				<span class="keyword">return</span> money;</span><br><span class="line">			&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="keyword">throw</span> <span class="keyword">new</span> OverdraftException(<span class="string">"额度不足"</span>,  -(overdraftProtection + temp));</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> OverdraftException(<span class="string">"取现金额不能为负数!!"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverdraftException</span> <span class="keyword">extends</span> <span class="title">Exception</span></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">double</span> deficit; <span class="comment">// 透支额</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">OverdraftException</span> <span class="params">(String message)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">// 透支异常</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">OverdraftException</span> <span class="params">(String message, <span class="keyword">double</span> deficit)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message);</span><br><span class="line">        <span class="keyword">this</span>.deficit = deficit;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 返回透支值</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getDeficit</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> deficit;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/1597064553079.png" alt="1597064553079"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/aliplay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weiplay.JPG">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -217,364 +361,128 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/08/06/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/08/05/%E6%97%A5%E6%9C%9F/" class="archive-article-date">
-  	<time datetime="2020-08-05T08:49:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-05</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/08/05/%E6%97%A5%E6%9C%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">日期</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/08/05/%E6%97%A5%E6%9C%9F/">日期</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#A-什么是异常"><span class="toc-number">1.</span> <span class="toc-text">A 什么是异常</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-文件不存在异常"><span class="toc-number">1.1.</span> <span class="toc-text">1 文件不存在异常</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#B-处理"><span class="toc-number">2.</span> <span class="toc-text">B 处理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-try-catch"><span class="toc-number">2.1.</span> <span class="toc-text">1 try catch</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-使用异常的父类进行catch"><span class="toc-number">2.2.</span> <span class="toc-text">2 使用异常的父类进行catch</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-多异常捕捉办法1"><span class="toc-number">2.3.</span> <span class="toc-text">3 多异常捕捉办法1</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-多异常捕捉办法2"><span class="toc-number">2.4.</span> <span class="toc-text">4 多异常捕捉办法2</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-finally"><span class="toc-number">2.5.</span> <span class="toc-text">5 finally</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-throws-抛出"><span class="toc-number">2.6.</span> <span class="toc-text">6 throws 抛出</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-throw和throws的区别"><span class="toc-number">2.7.</span> <span class="toc-text">7 throw和throws的区别</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#小练习"><span class="toc-number">2.8.</span> <span class="toc-text">小练习</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#C-异常分类"><span class="toc-number">3.</span> <span class="toc-text">C 异常分类</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1可查异常"><span class="toc-number">3.1.</span> <span class="toc-text">1可查异常</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-运行时异常"><span class="toc-number">3.2.</span> <span class="toc-text">2 运行时异常</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-错误"><span class="toc-number">3.3.</span> <span class="toc-text">3 错误</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#小练习-1"><span class="toc-number">3.4.</span> <span class="toc-text">小练习</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#D-Throwable"><span class="toc-number">4.</span> <span class="toc-text">D Throwable</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-Throwable"><span class="toc-number">4.1.</span> <span class="toc-text">1 Throwable</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#小练习-2"><span class="toc-number">4.2.</span> <span class="toc-text">小练习</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#E-自定义异常"><span class="toc-number">5.</span> <span class="toc-text">E 自定义异常</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-创建自定义异常"><span class="toc-number">5.1.</span> <span class="toc-text">1 创建自定义异常</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-抛出自定义异常"><span class="toc-number">5.2.</span> <span class="toc-text">2 抛出自定义异常</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#小练习-3"><span class="toc-number">5.3.</span> <span class="toc-text">小练习</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#G-综合练习"><span class="toc-number">6.</span> <span class="toc-text">G 综合练习</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-练习-异常综合1"><span class="toc-number">6.1.</span> <span class="toc-text">1 练习-异常综合1</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-练习-异常综合2"><span class="toc-number">6.2.</span> <span class="toc-text">2 练习-异常综合2</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/29/%E6%95%B0%E5%AD%97%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="archive-article-date">
-  	<time datetime="2020-07-29T04:41:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-29</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/29/%E6%95%B0%E5%AD%97%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2/">数字与字符串</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/25/%E6%8E%A5%E5%8F%A3%E4%B8%8E%E7%BB%A7%E6%89%BF/" class="archive-article-date">
-  	<time datetime="2020-07-25T04:50:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/25/%E6%8E%A5%E5%8F%A3%E4%B8%8E%E7%BB%A7%E6%89%BF/">接口与继承</a>
-    </h1>
+  <div id="SOHUCS" sid="异常处理" ></div> 
+<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: "cyuWksvx8",
+        conf: "d6c807716bea2d3c9293191658edba9c"
+    });
+</script>
+</script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/21/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/" class="archive-article-date">
-  	<time datetime="2020-07-21T05:03:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/21/%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1/">类和对象</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/20/Arrays/" class="archive-article-date">
-  	<time datetime="2020-07-20T06:39:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/20/Arrays/">Arrays</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/20/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/" class="archive-article-date">
-  	<time datetime="2020-07-20T06:39:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/20/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/">二维数组</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/20/%E5%A4%8D%E5%88%B6%E6%95%B0%E7%BB%84/" class="archive-article-date">
-  	<time datetime="2020-07-20T06:13:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/20/%E5%A4%8D%E5%88%B6%E6%95%B0%E7%BB%84/">复制数组</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/19/%E8%A1%A5%E5%85%85Java%E6%8E%92%E5%BA%8F/" class="archive-article-date">
-  	<time datetime="2020-07-19T00:22:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/19/%E8%A1%A5%E5%85%85Java%E6%8E%92%E5%BA%8F/">补充Java排序</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/" class="archive-article-date">
-  	<time datetime="2020-07-18T13:57:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/">增强型for循环</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -624,8 +532,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
