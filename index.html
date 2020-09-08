@@ -178,6 +178,188 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="hello-JSP" class="article article-type-hello  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/08/JSP/">hello JSP</a>
+    </h1>
+  
+
+        
+        <a href="/2020/09/08/JSP/" class="archive-article-date">
+  	<time datetime="2020-09-08T09:03:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1-hello-jsp"><a href="#1-hello-jsp" class="headerlink" title="1 hello.jsp"></a>1 hello.jsp</h4><p>先在eclipse中创建一个web工程，当然在此之前需要jsp环境的搭建（明天我在更新）</p>
+<p><img src="/2020/09/08/JSP/1599556006490.png" alt="1599556006490"></p>
+<p>dynamic web project 动态web工程</p>
+        
+          <a class="article-more-a" href="/2020/09/08/JSP/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JSP</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/09/08/JSP/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-I-O" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/11/I-O/">I/O</a>
+    </h1>
+  
+
+        
+        <a href="/2020/08/11/I-O/" class="archive-article-date">
+  	<time datetime="2020-08-11T05:19:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="A-文件对象"><a href="#A-文件对象" class="headerlink" title="A 文件对象"></a>A 文件对象</h4><p>文件和文件夹都是用File代表</p>
+<h5 id="1-创建一个文件对象"><a href="#1-创建一个文件对象" class="headerlink" title="1 创建一个文件对象"></a>1 创建一个文件对象</h5><p>使用绝对路径或者相对路径创建File对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> file;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestFile</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 绝对路径 Folder--文件夹</span></span><br><span class="line">		File f1 = <span class="keyword">new</span> File(<span class="string">"D:/LoLFolder"</span>);</span><br><span class="line">		<span class="comment">// getAbsolutePath()获取绝对路径</span></span><br><span class="line">		System.out.println(<span class="string">"f1的绝对路径："</span> + f1.getAbsolutePath());</span><br><span class="line">       </span><br><span class="line">		<span class="comment">// 相对路径,相对于工作目录，如果在eclipse中，就是项目目录</span></span><br><span class="line">        File f2 = <span class="keyword">new</span> File(<span class="string">"LOL.exe"</span>);</span><br><span class="line">        System.out.println(<span class="string">"f2的绝对路径："</span> + f2.getAbsolutePath());</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 把f1作为父目录创建文件对象</span></span><br><span class="line">        File f3 = <span class="keyword">new</span> File(f1, <span class="string">"LOL.exe"</span>);</span><br><span class="line">  </span><br><span class="line">        System.out.println(<span class="string">"f3的绝对路径："</span> + f3.getAbsolutePath());</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/11/I-O/1597123852557.png" alt="1597123852557"></p>
+<h5 id="2-文件常用方法1"><a href="#2-文件常用方法1" class="headerlink" title="2 文件常用方法1"></a>2 文件常用方法1</h5><p><strong>注意1：</strong> 需要在D:\LOLFolder确实存在一个LOL.exe,才可以看到对应的文件长度、修改时间等信息</p>
+<p><strong>注意2： renameTo方法用于对物理文件名称进行修改，但是并不会修改File对象的name属性。</strong> </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> file;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestFile</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        File f = <span class="keyword">new</span> File(<span class="string">"d:/LOLFolder/LOL.exe"</span>);</span><br><span class="line">        System.out.println(<span class="string">"当前文件是："</span> +f);</span><br><span class="line">         </span><br><span class="line">        <span class="comment">// 文件是否存在 exists--存在</span></span><br><span class="line">        System.out.println(<span class="string">"判断是否存在："</span>+f.exists());</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 是否是文件夹 Directory--文件夹</span></span><br><span class="line">        System.out.println(<span class="string">"判断是否是文件夹："</span>+f.isDirectory());</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 是否是文件（非文件夹）</span></span><br><span class="line">        System.out.println(<span class="string">"判断是否是文件："</span>+f.isFile());</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 文件长度</span></span><br><span class="line">        System.out.println(<span class="string">"获取文件的长度："</span>+f.length());</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 文件最后修改时间</span></span><br><span class="line">        <span class="keyword">long</span> time = f.lastModified();</span><br><span class="line">        Date d = <span class="keyword">new</span> Date(time);</span><br><span class="line">        System.out.println(<span class="string">"获取文件的最后修改时间："</span>+d);</span><br><span class="line">        <span class="comment">// 设置文件修改时间为1970.1.1 08:00:00</span></span><br><span class="line">        f.setLastModified(<span class="number">0</span>);</span><br><span class="line">        System.out.println(<span class="string">"设置文件修改时间为1970.1.1 08:00:00"</span>);</span><br><span class="line">        System.out.println(<span class="string">"获取文件的最后修改时间："</span>+d);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 文件重命名</span></span><br><span class="line">        File f2 =<span class="keyword">new</span> File(<span class="string">"d:/LOLFolder/DOTA.exe"</span>);</span><br><span class="line">        f.renameTo(f2);</span><br><span class="line">        System.out.println(<span class="string">"把LOL.exe改名成了DOTA.exe"</span>);</span><br><span class="line">         </span><br><span class="line">        System.out.println(<span class="string">"注意： 需要在D:\\LOLFolder确实存在一个LOL.exe,\r\n才可以看到对应的文件长度、修改时间等信息"</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-文件常用方法2"><a href="#3-文件常用方法2" class="headerlink" title="3  文件常用方法2"></a>3  文件常用方法2</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> file;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestFile</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        File f = <span class="keyword">new</span> File(<span class="string">"d:/LOLFolder/skin/garen.ski"</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 以字符串数组的形式，返回当前文件夹下的所有文件（不包含子文件及子文件夹）</span></span><br><span class="line">        f.list();</span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 以文件数组的形式，返回当前文件夹下的所有文件（不包含子文件及子文件夹）</span></span><br><span class="line">        File[]fs= f.listFiles();</span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 以字符串形式返回获取所在文件夹</span></span><br><span class="line">        f.getParent();</span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 以文件形式返回获取所在文件夹</span></span><br><span class="line">        f.getParentFile();</span><br><span class="line">        <span class="comment">// 创建文件夹，如果父文件夹skin不存在，创建就无效</span></span><br><span class="line">        f.mkdir();</span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 创建文件夹，如果父文件夹skin不存在，就会创建父文件夹</span></span><br><span class="line">        f.mkdirs();</span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 创建一个空文件,如果父文件夹skin不存在，就会抛出异常</span></span><br><span class="line">        f.createNewFile();</span><br><span class="line">        <span class="comment">// 所以创建一个空文件之前，通常都会创建父目录</span></span><br><span class="line">        f.getParentFile().mkdirs();</span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 列出所有的盘符c: d: e: 等等</span></span><br><span class="line">        f.listRoots();</span><br><span class="line">  </span><br><span class="line">        <span class="comment">// 刪除文件</span></span><br><span class="line">        f.delete();</span><br><span class="line">  </span><br><span class="line">        <span class="comment">// JVM结束的时候，刪除文件，常用于临时文件的删除</span></span><br><span class="line">        f.deleteOnExit();</span><br><span class="line">  </span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="小练习"><a href="#小练习" class="headerlink" title="小练习"></a>小练习</h5><h5 id="1-遍历文件夹"><a href="#1-遍历文件夹" class="headerlink" title="1 遍历文件夹"></a>1 遍历文件夹</h5><p>一般说来操作系统都会安装在C盘，所以会有一个 C:\WINDOWS目录。</p>
+<p>遍历这个目录下所有的文件(不用遍历子目录)</p>
+<p>找出这些文件里，最大的和最小(非0)的那个文件，打印出他们的文件名</p>
+<p><strong>注:</strong> 最小的文件不能是0长度 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> file;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestFile</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">		<span class="comment">/*	遍历文件夹（不包括文件夹内文件）</span></span><br><span class="line"><span class="comment">		 * </span></span><br><span class="line"><span class="comment">		 * 	一般说来操作系统都会安装在C盘，所以会有一个 C:\WINDOWS目录。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">			遍历这个目录下所有的文件(不用遍历子目录)</span></span><br><span class="line"><span class="comment">			</span></span><br><span class="line"><span class="comment">			找出这些文件里，最大的和最小(非0)的那个文件，打印出他们的文件名</span></span><br><span class="line"><span class="comment">			</span></span><br><span class="line"><span class="comment">			注: 最小的文件不能是0长度</span></span><br><span class="line"><span class="comment">		 */</span></span><br><span class="line">		File file = <span class="keyword">new</span> File(<span class="string">"C:/WINDOWS"</span>);</span><br><span class="line">		<span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">			System.out.println(<span class="string">"文件存在！"</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">"文件不存在！"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">        <span class="comment">// 以文件数组的形式，返回当前文件夹下的所有文件（不包含子文件及子文件夹）</span></span><br><span class="line">        File[] fs= file.listFiles();</span><br><span class="line">        </span><br><span class="line">        String FileMax = <span class="string">""</span>; <span class="comment">// 最大文件</span></span><br><span class="line">        String FileMin = <span class="string">""</span>; <span class="comment">// 最小文件</span></span><br><span class="line">		<span class="keyword">long</span> fMaxLength = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">long</span> fMinLength = Long.MAX_VALUE;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (File file2 : fs) &#123;</span><br><span class="line">			<span class="keyword">if</span> (file2.isFile()) &#123;</span><br><span class="line">				<span class="keyword">if</span> (file2.length() &gt; fMaxLength) &#123;</span><br><span class="line">					FileMax = file2.getAbsolutePath();</span><br><span class="line">					fMaxLength = file2.length();</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span> (file2.length() != <span class="number">0</span> &amp;&amp; file2.length() &lt; fMinLength) &#123;</span><br><span class="line">					FileMin = file2.getAbsolutePath();</span><br><span class="line">					fMinLength = file2.length();</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"最大文件是"</span>+FileMax+<span class="string">", 其大小是"</span>+fMaxLength+<span class="string">"字节"</span>);</span><br><span class="line">		System.out.println(<span class="string">"最小文件是"</span>+FileMin+<span class="string">", 其大小是"</span>+fMinLength+<span class="string">"字节"</span>);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/11/I-O/1597125716568.png" alt="1597125716568"></p>
+<h5 id="2-遍历子文件夹"><a href="#2-遍历子文件夹" class="headerlink" title="2 遍历子文件夹"></a>2 遍历子文件夹</h5><p>同上的练习，要求遍历子文件夹</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> file;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestFile</span> </span>&#123;</span><br><span class="line">	<span class="comment">//递归找子文件中最小或者最大的</span></span><br><span class="line">	<span class="keyword">static</span> File maxFile;</span><br><span class="line">	<span class="keyword">static</span> File minFile;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">long</span> maxLength = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">long</span> minLength = Long.MAX_VALUE;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">		String path = <span class="string">"c:/Windows"</span>;</span><br><span class="line">		</span><br><span class="line">		File f = <span class="keyword">new</span> File(path);<span class="comment">//创建一个文件路径</span></span><br><span class="line">		</span><br><span class="line">		<span class="keyword">long</span> startTime = System.currentTimeMillis();</span><br><span class="line">		getMaxMinFile(f);<span class="comment">//获取最大或者最小文件</span></span><br><span class="line">		<span class="keyword">long</span> endTime = System.currentTimeMillis();</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span> (maxFile != <span class="keyword">null</span>) &#123;</span><br><span class="line">			System.out.println(path + <span class="string">"目录下的最大文件是："</span> + maxFile);</span><br><span class="line">			System.out.println(<span class="string">"文件长度是："</span> + maxLength + <span class="string">"字节"</span>);</span><br><span class="line">		&#125; </span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span> (minFile != <span class="keyword">null</span>) &#123;</span><br><span class="line">			System.out.println(path + <span class="string">"目录下的最小文件是："</span> + minFile);</span><br><span class="line">			System.out.println(<span class="string">"文件长度是："</span> + minLength + <span class="string">"字节"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">"一共耗时"</span> + (endTime - startTime) + <span class="string">"ms"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">getMaxMinFile</span><span class="params">(File f)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span>(f.isFile()) &#123;<span class="comment">//判断是文件</span></span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span> (f != <span class="keyword">null</span>) &#123;</span><br><span class="line">					</span><br><span class="line">				<span class="keyword">if</span> (f.length() &gt;= maxLength) &#123;</span><br><span class="line">					maxFile = f;</span><br><span class="line">					maxLength = f.length();</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">				<span class="keyword">if</span> (f.length() != <span class="number">0</span> &amp;&amp; f.length() &lt; minLength) &#123;</span><br><span class="line">					minFile = f;</span><br><span class="line">					minLength = f.length();</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span>(f.isDirectory()) &#123;<span class="comment">//判断是文件夹</span></span><br><span class="line">			File[] fs = f.listFiles();<span class="comment">//以文件数组的形式，返回当前文件夹下所有文件，不包括子文件</span></span><br><span class="line">			<span class="keyword">if</span> (fs != <span class="keyword">null</span>) &#123;</span><br><span class="line">				<span class="keyword">for</span> (File file : fs) &#123;</span><br><span class="line">					getMaxMinFile(file);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/08/11/I-O/1597135550072.png" alt="1597135550072"></p>
+<h4 id="B-什么是流"><a href="#B-什么是流" class="headerlink" title="B 什么是流"></a>B 什么是流</h4><p>什么是流(Stream)，流就是一系列的数据</p>
+<h5 id="1-什么是流"><a href="#1-什么是流" class="headerlink" title="1 什么是流"></a>1 什么是流</h5><p>当不同的介质之间有数据交互的时候，JAVA就使用流来实现。<br>数据源可以是文件，还可以是数据库，网络甚至是其他的程序</p>
+<p>比如读取文件的数据到程序中，站在程序的角度来看，就叫做输入流<br>输入流： InputStream<br>输出流：OutputStream </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> stream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestStream</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		File f = <span class="keyword">new</span> File(<span class="string">"D:/lol.txt"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 创建基于文件的输入流</span></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			FileInputStream inputStream = <span class="keyword">new</span> FileInputStream(f);</span><br><span class="line">			<span class="comment">// 通过这个输入流，就可以把数据从硬盘，读取到Java的虚拟机中来，也就是读取到内存中</span></span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="小练习-1"><a href="#小练习-1" class="headerlink" title="小练习"></a>小练习</h5><p>参考文件输入流的建立，建立一个文件输出流</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> stream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileInputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.FileNotFoundException;</span><br><span class="line"><span class="keyword">import</span> java.io.FileOutputStream;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestStream</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		File f = <span class="keyword">new</span> File(<span class="string">"D:/lol.txt"</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 创建基于文件的输入流</span></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			FileInputStream inputStream = <span class="keyword">new</span> FileInputStream(f);</span><br><span class="line">			<span class="comment">// 通过这个输入流，就可以把数据从硬盘，读取到Java的虚拟机中来，也就是读取到内存中</span></span><br><span class="line">			FileOutputStream outputStream = <span class="keyword">new</span> FileOutputStream(f);</span><br><span class="line">			<span class="comment">// 通过这个输出流，就可以把数据从内存中，读取到硬盘中</span></span><br><span class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="C-ASCII码-概念"><a href="#C-ASCII码-概念" class="headerlink" title="C  ASCII码 概念"></a>C  ASCII码 概念</h4><p>所有的数据存放在计算机中都是以数字的形式存放的。 所以<strong>字母就需要转换为数字才能够存放</strong>。<br>比如A就对应的数字65，a对应的数字97.  不同的字母和符号对应不同的数字，就是一张码表。<br>ASCII是这样的一种码表。 只<strong>包含简单的英文字母</strong>，符号，数字等等。 <strong>不包含中文，德文，俄语等复杂</strong>的。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/08/11/I-O/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-异常处理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -807,158 +989,6 @@
 
 
   
-    <article id="post-补充Java排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/19/%E8%A1%A5%E5%85%85Java%E6%8E%92%E5%BA%8F/">补充Java排序</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/19/%E8%A1%A5%E5%85%85Java%E6%8E%92%E5%BA%8F/" class="archive-article-date">
-  	<time datetime="2020-07-19T00:22:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="1之前写的Java排序原理可能不太通俗易懂–现在在补充一下"><a href="#1之前写的Java排序原理可能不太通俗易懂–现在在补充一下" class="headerlink" title="1之前写的Java排序原理可能不太通俗易懂–现在在补充一下"></a>1之前写的Java排序原理可能不太通俗易懂–现在在补充一下</h5><h4 id="选择法排序"><a href="#选择法排序" class="headerlink" title="选择法排序"></a>选择法排序</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayRank</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line"><span class="comment">//		选择法排序的思路： </span></span><br><span class="line"><span class="comment">//		把第一位和其他所有的进行比较，只要比第一位小的，就换到第一个位置来 </span></span><br><span class="line"><span class="comment">//		比较完后，第一位就是最小的 </span></span><br><span class="line"><span class="comment">//		然后再从第二位和剩余的其他所有进行比较，只要比第二位小，就换到第二个位置来 </span></span><br><span class="line"><span class="comment">//		比较完后，第二位就是第二小的 </span></span><br><span class="line">		<span class="keyword">int</span> a [] = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>&#125;;</span><br><span class="line">        <span class="comment">// 排序前，先把内容打印出来</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            System.out.print(a[i] + <span class="string">" "</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">" "</span>);</span><br><span class="line">        <span class="comment">// 选择法排序 核心代码</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (a[<span class="number">0</span>] &gt; a[i]) &#123;</span><br><span class="line">				<span class="keyword">int</span> temp = a[<span class="number">0</span>];</span><br><span class="line">				a[<span class="number">0</span>] = a[i];</span><br><span class="line">				a[i] = temp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            System.out.print(a[i] + <span class="string">" "</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2020/07/19/%E8%A1%A5%E5%85%85Java%E6%8E%92%E5%BA%8F/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/19/%E8%A1%A5%E5%85%85Java%E6%8E%92%E5%BA%8F/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-增强型for循环" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/">增强型for循环</a>
-    </h1>
-  
-
-        
-        <a href="/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/" class="archive-article-date">
-  	<time datetime="2020-07-18T13:57:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h5 id="1直接上测试代码"><a href="#1直接上测试代码" class="headerlink" title="1直接上测试代码"></a>1直接上测试代码</h5><h5 id="注：增强型for循环只能用来取值，却不能用来修改数组里的值"><a href="#注：增强型for循环只能用来取值，却不能用来修改数组里的值" class="headerlink" title="注：增强型for循环只能用来取值，却不能用来修改数组里的值"></a>注：增强型for循环只能用来取值，却不能用来修改数组里的值</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EnhanceForLoop</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">		<span class="keyword">int</span> values[] = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</span><br><span class="line">        <span class="comment">//常规遍历</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; values.length; i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> each = values[i];</span><br><span class="line">			System.out.println(each);</span><br><span class="line">		&#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//增强型for循环遍历</span></span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> each : values) &#123;</span><br><span class="line">    	   System.out.println(each);</span><br><span class="line">       &#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1075,6 +1105,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
               </li>
              
               <li class="article-tag-list-item">

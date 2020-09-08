@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>增强型for循环 | 清峰的博客</title>
+  <title>hello JSP | 清峰的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -24,18 +24,21 @@
     }
   </style>
 
-  <meta name="description" content="1直接上测试代码注：增强型for循环只能用来取值，却不能用来修改数组里的值12345678910111213141516171819public class EnhanceForLoop &amp;#123;	public static void main(String[] args) &amp;#123;		&#x2F;&#x2F; TODO Auto-generated method stub		int values[] &#x3D; n">
+  <meta name="description" content="1 hello.jsp先在eclipse中创建一个web工程，当然在此之前需要jsp环境的搭建（明天我在更新）  dynamic web project 动态web工程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="增强型for循环">
-<meta property="og:url" content="http://yoursite.com/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/index.html">
+<meta property="og:title" content="hello JSP">
+<meta property="og:url" content="http://yoursite.com/2020/09/08/JSP/index.html">
 <meta property="og:site_name" content="清峰的博客">
-<meta property="og:description" content="1直接上测试代码注：增强型for循环只能用来取值，却不能用来修改数组里的值12345678910111213141516171819public class EnhanceForLoop &amp;#123;	public static void main(String[] args) &amp;#123;		&#x2F;&#x2F; TODO Auto-generated method stub		int values[] &#x3D; n">
+<meta property="og:description" content="1 hello.jsp先在eclipse中创建一个web工程，当然在此之前需要jsp环境的搭建（明天我在更新）  dynamic web project 动态web工程">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-18T13:57:30.000Z">
-<meta property="article:modified_time" content="2020-07-18T14:07:18.042Z">
+<meta property="og:image" content="http://yoursite.com/2020/09/08/JSP/1599556006490.png">
+<meta property="og:image" content="http://yoursite.com/2020/09/08/JSP/1599556494478.png">
+<meta property="article:published_time" content="2020-09-08T09:03:17.000Z">
+<meta property="article:modified_time" content="2020-09-08T09:16:35.207Z">
 <meta property="article:author" content="清 峰 H">
-<meta property="article:tag" content="Java">
+<meta property="article:tag" content="JSP">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/09/08/JSP/1599556006490.png">
   
     <link rel="alternative" href="/atom.xml" title="清峰的博客" type="application/atom+xml">
   
@@ -179,31 +182,50 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-增强型for循环" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="hello-JSP" class="article article-type-hello " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      增强型for循环
+      hello JSP
     </h1>
   
 
         
-        <a href="/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/" class="archive-article-date">
-  	<time datetime="2020-07-18T13:57:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-18</time>
+        <a href="/2020/09/08/JSP/" class="archive-article-date">
+  	<time datetime="2020-09-08T09:03:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="1直接上测试代码"><a href="#1直接上测试代码" class="headerlink" title="1直接上测试代码"></a>1直接上测试代码</h5><h5 id="注：增强型for循环只能用来取值，却不能用来修改数组里的值"><a href="#注：增强型for循环只能用来取值，却不能用来修改数组里的值" class="headerlink" title="注：增强型for循环只能用来取值，却不能用来修改数组里的值"></a>注：增强型for循环只能用来取值，却不能用来修改数组里的值</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EnhanceForLoop</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">		<span class="keyword">int</span> values[] = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</span><br><span class="line">        <span class="comment">//常规遍历</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; values.length; i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> each = values[i];</span><br><span class="line">			System.out.println(each);</span><br><span class="line">		&#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//增强型for循环遍历</span></span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> each : values) &#123;</span><br><span class="line">    	   System.out.println(each);</span><br><span class="line">       &#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        <h4 id="1-hello-jsp"><a href="#1-hello-jsp" class="headerlink" title="1 hello.jsp"></a>1 hello.jsp</h4><p>先在eclipse中创建一个web工程，当然在此之前需要jsp环境的搭建（明天我在更新）</p>
+<p><img src="/2020/09/08/JSP/1599556006490.png" alt="1599556006490"></p>
+<p>dynamic web project 动态web工程</p>
 <a id="more"></a>
 
-<h5 id="用增强型for循环找出最大的那个数"><a href="#用增强型for循环找出最大的那个数" class="headerlink" title="用增强型for循环找出最大的那个数"></a>用增强型for循环找出最大的那个数</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EnhanceForLoop</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">		<span class="keyword">int</span> values[] = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</span><br><span class="line">        <span class="comment">// 常规遍历</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; values.length; i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> each = values[i];</span><br><span class="line">			System.out.println(each);</span><br><span class="line">		&#125;</span><br><span class="line">        <span class="comment">// 定义max为第一个</span></span><br><span class="line">        <span class="keyword">int</span> max = values[<span class="number">0</span>];</span><br><span class="line">        <span class="comment">//  增强型for循环遍历</span></span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> each : values) &#123;</span><br><span class="line">    	   <span class="keyword">if</span> (max &lt; each) </span><br><span class="line">			max = each;</span><br><span class="line">       &#125;</span><br><span class="line">       System.out.println(<span class="string">"max: "</span>+max);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;%<span class="meta">@page</span> contentType=<span class="string">"text/html; charset=UTF-8"</span> </span><br><span class="line">	pageEncoding=<span class="string">"UTF-8"</span> <span class="keyword">import</span>=<span class="string">"java.util.*"</span>%&gt;</span><br><span class="line">&lt;!-- contentType -- 内容类型   charset -- 字符姐</span><br><span class="line">	 pageEncoding -- 页面编码 <span class="keyword">import</span>-- 导入--&gt;</span><br><span class="line">	 </span><br><span class="line">	 hello JSP</span><br><span class="line">	 </span><br><span class="line">	 &lt;br&gt;</span><br><span class="line">	 </span><br><span class="line">	 &lt;%=<span class="keyword">new</span> Date().toLocaleString() %&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/09/08/JSP/1599556494478.png" alt="1599556494478"></p>
+<h4 id="2-代码解释"><a href="#2-代码解释" class="headerlink" title="2 代码解释"></a>2 代码解释</h4><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%<span class="meta">@page</span> contentType=<span class="string">"text/html; charset=UTF-8"</span>  pageEncoding=<span class="string">"UTF-8"</span> <span class="keyword">import</span>=<span class="string">"java.util.*"</span>%&gt;</span><br></pre></td></tr></table></figure>
+
+<p>是JSP的<strong>&lt;%@page指令</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">contentType=<span class="string">"text/html; charset=UTF-8"</span></span><br></pre></td></tr></table></figure>
+
+<p>相当于response.setContentType(“text/html; charset=UTF-8”); 通知浏览器以UTF-8进行中文解码</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pageEncoding=<span class="string">"UTF-8"</span></span><br></pre></td></tr></table></figure>
+
+<p>如果jsp文件中出现了中文，这些中文使用UTF-8进行编码</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span>=<span class="string">"java.util.*</span></span><br></pre></td></tr></table></figure>
+
+<p>导入其他类，如果导入多个类，彼此用,逗号隔开，像这样 <strong>import=”java.util.*,java.sql.*“</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%=<span class="keyword">new</span> Date().toLocaleString()%&gt;</span><br></pre></td></tr></table></figure>
+
+<p>输出当前时间，相当于在Servlet中使用<a href="https://how2j.cn/k/servlet/servlet-response/548.html#step1587" target="_blank" rel="noopener">response.getWriter()</a>进行输出</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.getWriter().println(<span class="keyword">new</span> Date().toLocaleString());</span><br></pre></td></tr></table></figure>
 
 
       
@@ -249,7 +271,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JSP</a>
         		</li>
       		
 		</ul>
@@ -305,7 +327,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/18/%E5%A2%9E%E5%BC%BA%E5%9E%8Bfor%E5%BE%AA%E7%8E%AF/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/09/08/JSP/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -319,18 +341,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/07/19/%E8%A1%A5%E5%85%85Java%E6%8E%92%E5%BA%8F/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          补充Java排序
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/07/18/Java%E6%8E%92%E5%BA%8F/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java排序</div>
+    <a href="/2020/08/11/I-O/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">I/O</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -357,7 +370,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#1直接上测试代码"><span class="toc-number">1.</span> <span class="toc-text">1直接上测试代码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#注：增强型for循环只能用来取值，却不能用来修改数组里的值"><span class="toc-number">2.</span> <span class="toc-text">注：增强型for循环只能用来取值，却不能用来修改数组里的值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#用增强型for循环找出最大的那个数"><span class="toc-number">3.</span> <span class="toc-text">用增强型for循环找出最大的那个数</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-hello-jsp"><span class="toc-number">1.</span> <span class="toc-text">1 hello.jsp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-代码解释"><span class="toc-number">2.</span> <span class="toc-text">2 代码解释</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -373,7 +386,7 @@
   
 
   
-  <div id="SOHUCS" sid="增强型for循环" ></div> 
+  <div id="SOHUCS" sid="JSP" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
